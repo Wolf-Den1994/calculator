@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>calculator</title>
+</head>
+
+<body>
+  <main class="main">
+      <div class="calc">
+        <div class="calc-display">
+          <input disabled type="text" id="display" value="0" name="" placeholder="000000000000000000" class="calc-display-input">
+        </div>
+        <div class="calc-buttons">
+          <table class="calc-table">
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="clear-btn btn btn-hover-red" id="ce">ce</button>
+              </td>
+              <td>
+                <button type="button" class="clear-btn btn btn-hover-red" id="c">c</button>
+              </td>
+              <td>
+                <button type="button" class="pow btn btn-hover-orange">x&sup2; </button>
+              </td>
+              <td>
+                <button type="button" class="operator powxy btn btn-hover-orange">x^y</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              
+              <td>
+                <button type="button" class="minus-plus btn btn-hover-orange">&plusmn;</button>
+              </td>
+              <td>
+                <button type="button" class="operator btn btn-hover-orange">/</button>
+              </td>
+              <td>
+                <button type="button" class=" operator btn btn-hover-orange">*</button>
+              </td>
+              <td>
+                <button type="button" class="sqrt btn btn-hover-orange">&radic;</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="number btn-hover-green btn">7</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn">8</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn">9</button>
+              </td>
+              <td>
+                <button type="button" class="operator btn btn-hover-orange">-</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="number btn-hover-green btn">4</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn">5</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn">6</button>
+              </td>
+              <td>
+                <button type="button" class="operator btn btn-hover-orange">+</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td>
+                <button type="button" class="number btn-hover-green btn">1</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn">2</button>
+              </td>
+              <td>
+                <button type="button" class="number btn-hover-green btn">3</button>
+              </td>
+              <td rowspan="2">
+                <button type="button" class="operator btn btn-equal btn-hover-orange" id="result">=</button>
+              </td>
+            </tr>
+            <tr class="calc-buttons-row">
+              <td colspan="2">
+                <button type="button" class="number btn-hover-green btn btn-long">0</button>
+              </td>
+              <td>
+                <button type="button" class="btn  btn-hover-orange" id="decimal">.</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="instruction">
+        <h2 class="instruction-title">Инструкция</h2>
+        <p class="instruction-text">СЕ - очищает только текущее поле ввода.</p>
+        <p class="instruction-text">С - очищает всё полностью (и поле ввода и память).</p>
+        <p class="instruction-text">x&sup2; - возводит число на дисплее в степень 2.</p>
+        <p class="instruction-text">x^y - возводит число X на дисплее в степень Y и возвращает результат после нажатия кнопки =.</p>
+        <p class="instruction-text">&plusmn; - изменяет знак на дисплее на отрицательный или положительный.</p>
+        <p class="instruction-text">&radic; - извлекает квадратный корень из числа на дисплее.</p>
+        <p class="instruction-text">/ - выполняет операцию деления.</p>
+        <p class="instruction-text">* - выполняет операцию умножения.</p>
+        <p class="instruction-text">- - выполняет операцию вычитания.</p>
+        <p class="instruction-text">+ - выполняет операцию сложения.</p>
+      </div>
+  </main>
+  <script src="main.js">
+  </script>
+</body>
+</html>
